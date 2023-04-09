@@ -12,29 +12,23 @@
 </head>
 
 <body>
-    <header class="pt-5" style="width: 100vw;min-height: 100vh;">
-        <!-- Start: Hero Clean Reverse -->
-        <div class="container pt-4 pt-xl-5">
-            <div class="row pt-5" style="width: 100%;min-height: 100vh;height: auto;">
-                <!-- Start: Ask Artifex -->
-                <div class="col-md-8 text-center text-md-start mx-auto">
-                    <div class="text-center">
-                        <h1 class="display-4 fw-bold mb-5">Got a question?<br>Ask&nbsp;<span class="underline"><em>Artiifex</em></span>.</h1><img src="assets/img/IMG_3056.jpg" style="width: 200px;border: 5px solid rgb(255,210,0);border-radius: 50%;margin-bottom: 3rem;">
-                        <form class="d-flex flex-column justify-content-center align-items-center flex-wrap justify-content-md-center align-items-md-center" method="post">
-                            <div class="shadow-lg mb-3"><textarea class="form-control" id="artifex_input" name="outboundMessage" placeholder="Type your question for Artifex." required="" style="height: fit-content;max-width: 90vw;min-width: 50vw;min-height: 90px;text-align: left;" autofocus="" rows="auto"></textarea></div>
-                            <div class="shadow-lg mb-3">
-                                <!-- Start: Submit --><button class="btn btn-primary" id="submit" type="button" style="margin-right: 0px;">Ask Artifex</button><!-- End: Submit -->
-                                <!-- Start: Submit --><button class="btn btn-primary" id="input_CLEAR" type="button" style="background: rgb(255,210,0);color: rgb(36,40,91);margin-left: 0px;">Clear</button><!-- End: Submit -->
-                            </div>
-                        </form>
-                    </div>
-                </div><!-- End: Ask Artifex -->
-            </div>
-        </div><!-- End: Hero Clean Reverse -->
-    </header><!-- Start: Footer Multi Column -->
+    <!-- Start: Main Section -->
+    <div class="text-center d-flex d-sm-flex flex-column justify-content-center align-items-center justify-content-sm-center align-items-sm-center" style="width: 100vw;min-height: 100vh;">
+        <h1 class="display-4 fw-bold mb-5">Got a question?<br>Ask&nbsp;<span class="underline"><em>Artiifex</em></span>.</h1><img src="assets/img/IMG_3056.jpg" style="width: 200px;border: 5px solid rgb(255,210,0);border-radius: 50%;margin-bottom: 3rem;">
+        <form class="d-flex flex-column justify-content-center align-items-center flex-wrap justify-content-md-center align-items-md-center" method="post">
+            <!-- Start: Text Box -->
+            <div class="shadow-lg mb-3"><textarea class="form-control" id="artifex_input" name="outboundMessage" placeholder="Type your question for Artifex." required="" style="height: 40vh;max-width: 95vw;min-width: 70vw;min-height: 100px;text-align: left;" autofocus="" rows="auto"></textarea></div><!-- End: Text Box -->
+            <!-- Start: Buttons -->
+            <div class="shadow-lg mb-3">
+                <!-- Start: Submit --><button class="btn btn-primary" id="submit" type="button" style="margin-right: 0px;">Ask Artifex</button><!-- End: Submit -->
+                <!-- Start: Submit --><button class="btn btn-primary" id="input_CLEAR" type="button" style="background: rgb(255,210,0);color: rgb(36,40,91);margin-left: 0px;">Clear</button><!-- End: Submit -->
+            </div><!-- End: Buttons -->
+        </form>
+    </div><!-- End: Main Section -->
+    <!-- Start: Footer Multi Column -->
     <footer>
         <div class="container py-4 py-lg-5">
-            <div class="text-muted d-flex justify-content-between align-items-center pt-3">
+            <div class="text-muted d-flex justify-content-center align-items-center align-content-center pt-3">
                 <!-- Start: Copyright -->
                 <p class="mb-0">Copyright © 2023 Artiifex AI</p><!-- End: Copyright -->
             </div>
