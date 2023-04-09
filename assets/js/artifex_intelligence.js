@@ -88,7 +88,7 @@ async function getArtifexResponse(outbound) {
 // When the user clicks the textarea, if the value is not empty, clear it.
 var input_CLEAR = document.getElementById('input_CLEAR');
 input_CLEAR.addEventListener('click', function() {
-    if (input_CLEAR.value != "") {
-        input_CLEAR.value = "";
+    if (artifex_input.value != "") {
+        artifex_input.value = "";
     }
 });
