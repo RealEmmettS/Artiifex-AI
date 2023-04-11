@@ -64,7 +64,7 @@ async function getArtifexResponse(outbound) {
     var outbound_urlencoded = encodeURIComponent(outbound);
 
     //create the url for the request
-    let artifex_url = "https://artifex-ai.emmettshaughnes.repl.co/artifex/" + outbound_urlencoded;
+    let artifex_url = "https://artifex-ai.emmettshaughnes.repl.co/text/" + outbound_urlencoded;
 
     //make the request
     let response = await fetch(artifex_url);
