@@ -5,10 +5,6 @@ var inbound_message = "";
 //create a 'messages' array to store the messages sent and received from Artifex
 var messages = [];
 
-// Set the personalty for Artifex
-let personality_subroutine = "";
-//messages.push({role: "system", content: personality_subroutine});
-
 var submit_button = document.getElementById('submit');
 
 submit_button.addEventListener('click', function() {
