@@ -66,19 +66,19 @@ async function admin_getArtifexResponse(outbound) {
     //create the url for the request
     let admin_artifex_url = "http://artiifexapi.replit.app/text/" + admin_outbound_urlencoded;
 
+    /* SAMPLE API RESPONSE
+    {"role": "assistant", "content": "Hello! My name is Artifex. How can I assist you today?"}
+    */
+
     //make the request
     let admin_response = await fetch(admin_artifex_url);
 
     //get the response
     admin_inbound_message = await admin_response.text();
 
-    /* EXAMPLE RESPONSE
-    {"role": "assistant", "content": "Hello! My name is Artifex. How can I assist you today?"}
-    */
 
    //set inbound_message to the content of the response (use the example above as reference)
-   admin_inbound_message = JSON.parse(admin_inbound_message).content;
-
+   inbound_message = admin_inbound_message;
 
     document.getElementById('admin_artifex_input').value = admin_inbound_message;
     admin_submit_button.disabled = false; 
