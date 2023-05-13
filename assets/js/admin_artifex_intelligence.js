@@ -64,7 +64,7 @@ async function admin_getArtifexResponse(outbound) {
     var admin_outbound_urlencoded = encodeURIComponent(outbound);
 
     //create the url for the request
-    let admin_artifex_url = "https://artiifexapi.replit.app/text/" + admin_outbound_urlencoded;
+    let admin_artifex_url = "http://artiifexapi.replit.app/text/" + admin_outbound_urlencoded;
 
     //make the request
     let admin_response = await fetch(admin_artifex_url);
@@ -94,7 +94,7 @@ admin_input_CLEAR.addEventListener('click', function() {
 });
 
 
-//write a function to make a requesto this URL (https://artifex-ai.emmettshaughnes.repl.co/speech/ + outbound_urlencoded), and then play the returned audio (mp3) file
+//write a function to make a requesto this URL (http://artifex-ai.emmettshaughnes.repl.co/speech/ + outbound_urlencoded), and then play the returned audio (mp3) file
 async function getArtifexSpeech(outbound) {
     console.log("Getting audio from Elven...");
 
@@ -103,7 +103,7 @@ async function getArtifexSpeech(outbound) {
     console.log(outbound_encoded);
 
     //create the url for the request
-    let artifex_url = "https://artiifexapi.replit.app/speech/" + outbound_encoded;
+    let artifex_url = "http://artiifexapi.replit.app/speech/" + outbound_encoded;
 
     if (artifex_url.length < 1000) {
         //make the request
