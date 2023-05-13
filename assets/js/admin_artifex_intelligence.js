@@ -1,4 +1,8 @@
-// When the submit button (id 'submit') is clicked, get the value of textarea (id 'artifex_input') and store it in a global variable called 'outbound_message'
+function submitMessage() {
+  var textarea = document.getElementById('artifex_input');
+  var message = textarea.value;
+  outbound_message = message;
+}
 var admin_outbound_message = "";
 var admin_inbound_message = "";
 
