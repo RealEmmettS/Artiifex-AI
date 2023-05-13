@@ -60,7 +60,7 @@ async function admin_getArtifexResponse(outbound) {
     var admin_outbound_urlencoded = encodeURIComponent(outbound);
 
     //create the url for the request
-    let admin_artifex_url = "https://artiifexapi.replit.app/text" + admin_outbound_urlencoded;
+    let admin_artifex_url = "https://artiifexapi.replit.app/text/" + admin_outbound_urlencoded;
 
     //make the request
     let admin_response = await fetch(admin_artifex_url);
