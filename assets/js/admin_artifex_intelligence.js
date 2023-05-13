@@ -64,7 +64,7 @@ async function admin_getArtifexResponse(outbound) {
     var admin_outbound_urlencoded = encodeURIComponent(outbound);
 
     //create the url for the request
-    let admin_artifex_url = "https://artiifexapi.replit.app/text/" + admin_outbound_urlencoded;
+    let admin_artifex_url = "https://api.artiifexai.com/text/" + admin_outbound_urlencoded;
 
     /* SAMPLE API RESPONSE
     {"role": "assistant", "content": "Hello! My name is Artifex. How can I assist you today?"}
@@ -103,7 +103,7 @@ async function getArtifexSpeech(outbound) {
     console.log(outbound_encoded);
 
     //create the url for the request
-    let artifex_url = "https://artiifexapi.replit.app/speech/" + outbound_encoded;
+    let artifex_url = "https://api.artiifexai.com/speech/" + outbound_encoded;
 
     if (artifex_url.length < 1000) {
         //make the request
