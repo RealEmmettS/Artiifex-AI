@@ -80,7 +80,7 @@ async function admin_getArtifexResponse(outbound) {
    //set inbound_message to the content of the response (use the sample above as reference)
    inbound_message = JSON.parse(admin_inbound_message).content;
 
-    document.getElementById('admin_artifex_input').value = admin_inbound_message;
+    document.getElementById('admin_artifex_input').value = inbound_message;
     admin_submit_button.disabled = false; 
 };
 
